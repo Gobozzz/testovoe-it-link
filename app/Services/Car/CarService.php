@@ -13,12 +13,9 @@ use Illuminate\Support\Facades\DB;
 final class CarService implements CarServiceContract
 {
     public function __construct(
-        private readonly CarRepositoryContract       $carRepository,
+        private readonly CarRepositoryContract $carRepository,
         private readonly CarOptionRepositoryContract $carOptionRepository,
-    )
-    {
-
-    }
+    ) {}
 
     public function create(CarCreateDTO $data): Car
     {

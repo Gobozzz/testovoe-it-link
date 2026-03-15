@@ -12,17 +12,16 @@ class CarOption extends Model
     use HasFactory;
 
     protected $fillable = [
-        "car_id",
-        "brand",
-        "model",
-        "year",
-        "body",
-        "mileage",
+        'car_id',
+        'brand',
+        'model',
+        'year',
+        'body',
+        'mileage',
     ];
 
     public function car(): BelongsTo
     {
         return $this->belongsTo(Car::class);
     }
-
 }

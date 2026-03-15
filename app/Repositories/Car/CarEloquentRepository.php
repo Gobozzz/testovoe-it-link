@@ -10,7 +10,6 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 final class CarEloquentRepository implements CarRepositoryContract
 {
-
     public function findOrFail(int $id): Car
     {
         return Car::query()->findOrFail($id);
@@ -24,11 +23,11 @@ final class CarEloquentRepository implements CarRepositoryContract
     public function create(CarCreateDTO $data): Car
     {
         return Car::query()->create([
-            "title" => $data->title,
-            "description" => $data->description,
-            "price" => $data->price,
-            "photo_url" => $data->photoUrl,
-            "contacts" => $data->contacts,
+            'title' => $data->title,
+            'description' => $data->description,
+            'price' => $data->price,
+            'photo_url' => $data->photoUrl,
+            'contacts' => $data->contacts,
         ]);
     }
 }

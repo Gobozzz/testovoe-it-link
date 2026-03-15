@@ -12,12 +12,12 @@ final class CarOptionEloquentRepository implements CarOptionRepositoryContract
     public function create(int $carId, CarOptionDTO $data): CarOption
     {
         return CarOption::query()->create([
-            "car_id" => $carId,
-            "brand" => $data->brand,
-            "model" => $data->model,
-            "year" => $data->year,
-            "body" => $data->body,
-            "mileage" => $data->mileage,
+            'car_id' => $carId,
+            'brand' => $data->brand,
+            'model' => $data->model,
+            'year' => $data->year,
+            'body' => $data->body,
+            'mileage' => $data->mileage,
         ]);
     }
 }

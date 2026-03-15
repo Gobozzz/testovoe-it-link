@@ -12,11 +12,11 @@ class Car extends Model
     use HasFactory;
 
     protected $fillable = [
-        "title",
-        "description",
-        "price",
-        "photo_url",
-        "contacts",
+        'title',
+        'description',
+        'price',
+        'photo_url',
+        'contacts',
     ];
 
     protected $casts = [
@@ -27,5 +27,4 @@ class Car extends Model
     {
         return $this->hasOne(CarOption::class);
     }
-
 }

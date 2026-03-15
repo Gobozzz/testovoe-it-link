@@ -19,11 +19,11 @@ class CarFactory extends Factory
     public function definition(): array
     {
         return [
-            "title" => fake()->title(),
-            "description" => fake()->text(),
-            "price" => fake()->randomFloat(2, 100000, 9999999),
-            "photo_url" => fake()->url(),
-            "contacts" => fake()->phoneNumber(),
+            'title' => fake()->title(),
+            'description' => fake()->text(),
+            'price' => fake()->randomFloat(2, 100000, 9999999),
+            'photo_url' => fake()->url(),
+            'contacts' => fake()->phoneNumber(),
         ];
     }
 
@@ -35,5 +35,4 @@ class CarFactory extends Factory
             ]);
         });
     }
-
 }

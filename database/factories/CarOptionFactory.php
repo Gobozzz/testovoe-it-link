@@ -18,12 +18,12 @@ class CarOptionFactory extends Factory
     public function definition(): array
     {
         return [
-            "car_id" => Car::query()->inRandomOrder()->first() ?? Car::factory()->create(),
-            "brand" => fake()->word(),
-            "model" => fake()->word(),
-            "year" => fake()->numberBetween(1990, 2026),
-            "body" => fake()->text(200),
-            "mileage" => fake()->numberBetween(100, 1000),
+            'car_id' => Car::query()->inRandomOrder()->first() ?? Car::factory()->create(),
+            'brand' => fake()->word(),
+            'model' => fake()->word(),
+            'year' => fake()->numberBetween(1990, 2026),
+            'body' => fake()->text(200),
+            'mileage' => fake()->numberBetween(100, 1000),
         ];
     }
 }

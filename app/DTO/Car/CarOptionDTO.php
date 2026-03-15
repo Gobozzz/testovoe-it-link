@@ -9,11 +9,8 @@ final readonly class CarOptionDTO
     public function __construct(
         public string $brand,
         public string $model,
-        public int    $year,
+        public int $year,
         public string $body,
-        public int    $mileage,
-    )
-    {
-
-    }
+        public int $mileage,
+    ) {}
 }

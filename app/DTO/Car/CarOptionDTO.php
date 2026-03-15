@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\DTO\CarOption;
+namespace App\DTO\Car;
 
-final readonly class CarOptionCreateDTO
+final readonly class CarOptionDTO
 {
     public function __construct(
         public string $brand,
